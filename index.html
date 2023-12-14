@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telephone Link App</title>
+    <style>
+      /* Resets any default margins and padding */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%; /* Ensures full height */
+        box-sizing: border-box; /* Ensures padding doesn't affect overall width/height */
+      }
+
+      /* Apply flexbox to center the content both vertically and horizontally */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Use min-height to ensure full vertical height */
+        background-color: #1a1a1a; /* Dark background for contrast */
+        font-family: "Arial", sans-serif;
+      }
+
+      /* Styling the container and link */
+      .tel-link-container {
+        text-align: center;
+        display: flex; /* Added flex here to ensure the link centers inside the container */
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Full width to center the link on the page */
+        height: 100vh; /* Full height to center the link vertically */
+      }
+
+      .tel-link {
+        display: inline-block;
+        background-color: #4caf50; /* Change the color to your preference */
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer; /* Makes it clear it's clickable */
+        transition: background-color 0.3s ease; /* Smooth transition for hover */
+      }
+
+      .tel-link:hover {
+        background-color: #45a049; /* Slightly darker shade on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tel-link-container">
+      <a href="tel:+17868950462" class="tel-link">Call Us Now</a>
+    </div>
+  </body>
+</html>
