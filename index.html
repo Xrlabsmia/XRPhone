@@ -24,28 +24,30 @@
         font-family: "Arial", sans-serif;
       }
 
-      /* Styling the container and link */
+      /* Styling the container */
       .tel-link-container {
         text-align: center;
-        display: flex; /* Added flex here to ensure the link centers inside the container */
+        display: flex; /* Ensures the link centers inside the container */
         justify-content: center;
         align-items: center;
         width: 100%; /* Full width to center the link on the page */
-        height: 100vh; /* Full height to center the link vertically */
+        /* height: 100vh; Removed to allow the container to shrink-wrap to the content */
       }
 
+      /* Styling the link */
       .tel-link {
         display: inline-block;
-        background-color: #4caf50; /* Change the color to your preference */
+        background-color: #4caf50; /* Green background */
         color: white;
-        padding: 15px 25px;
+        padding: 10px 20px; /* Reduced padding */
         text-decoration: none;
         border-radius: 5px;
-        font-size: 20px;
-        cursor: pointer; /* Makes it clear it's clickable */
+        font-size: 60px;
+        cursor: pointer; /* Indicates the link is clickable */
         transition: background-color 0.3s ease; /* Smooth transition for hover */
       }
 
+      /* Hover effect for the link */
       .tel-link:hover {
         background-color: #45a049; /* Slightly darker shade on hover */
       }
