@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Telephone Link App</title>
-    <style>
-      /* Resets any default margins and padding */
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        height: 100%; /* Ensures full height */
-        box-sizing: border-box; /* Ensures padding doesn't affect overall width/height */
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telephone Link App</title>
+  <style>
+    /* Resets any default margins and padding */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%; /* Ensures full height */
+      box-sizing: border-box; /* Ensures padding doesn't affect overall width/height */
+    }
 
-      /* Apply flexbox to center the content both vertically and horizontally */
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh; /* Use min-height to ensure full vertical height */
-        background-color: #1a1a1a; /* Dark background for contrast */
-        font-family: "Arial", sans-serif;
-      }
+    /* Apply flexbox to center the content both vertically and horizontally */
+    body {
+      display: flex;
+      flex-direction: column; /* Stack vertically */
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Use min-height to ensure full vertical height */
+      background-color: #1a1a1a; /* Dark background for contrast */
+      font-family: "Arial", sans-serif;
+    }
 
-      /* Styling the container */
-      .tel-link-container {
-        text-align: center;
-        display: flex; /* Ensures the link centers inside the container */
-        justify-content: center;
-        align-items: center;
-        width: 100%; /* Full width to center the link on the page */
-        /* height: 100vh; Removed to allow the container to shrink-wrap to the content */
-      }
+    /* Styling the container and link */
+    .tel-link-container {
+      text-align: center;
+    }
 
-      /* Styling the link */
-      .tel-link {
-        display: inline-block;
-        background-color: #4caf50; /* Green background */
-        color: white;
-        padding: 10px 20px; /* Reduced padding */
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 60px;
-        cursor: pointer; /* Indicates the link is clickable */
-        transition: background-color 0.3s ease; /* Smooth transition for hover */
-      }
+    /* Styling the link */
+    .tel-link {
+      display: inline-block;
+      background-color: #4caf50; /* Green background */
+      color: white;
+      padding: 10px 20px; /* Reduced padding */
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 40px; /* Large font size for button text */
+      cursor: pointer; /* Indicates the link is clickable */
+      transition: background-color 0.3s ease; /* Smooth transition for hover */
+    }
 
-      /* Hover effect for the link */
-      .tel-link:hover {
-        background-color: #45a049; /* Slightly darker shade on hover */
-      }
-    </style>
-  </head>
-  <body>
-    <div class="tel-link-container">
-      <a href="tel:+19543947832" class="tel-link">Call Us Now</a>
-    </div>
-  </body>
+    /* Hover effect for the link */
+    .tel-link:hover {
+      background-color: #45a049; /* Slightly darker shade on hover */
+    }
+
+    /* Styling for the call instruction text */
+    .call-instruction {
+      color: #ffffff; /* White color for visibility */
+      margin-top: 10px; /* Spacing between the button and the text */
+      font-size: 16px; /* Smaller font size than the button text */
+      text-align: center; /* Center the text */
+      font-family: "Arial", sans-serif; /* Maintain font consistency */
+    }
+  </style>
+</head>
+<body>
+  <div class="tel-link-container">
+    <a href="tel:+19543947832" class="tel-link">Call Us Now</a>
+    <p class="call-instruction">PRESS AND HOLD TO CALL</p> <!-- Instruction text -->
+  </div>
+</body>
 </html>
